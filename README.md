@@ -1,16 +1,39 @@
 # Project Title
 
-Blockchain voting project in Blockchain
+Blockchain voting project in Blockchain and unit testing
 
 
 
+## How to install an run
+In a shell, clone the project:
+```bash
+git clone https://github.com/jbl31/voting-system.git
+```
+```bash
+cd voting-system
+```
 
-## Features
+then, run:
+```bash
+npm install
+```
+In another terminal, run to launch the hardhat blockchain:
+```bash
+npx hardhat node
+```
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+If you need to deploy the contract locally:
+```bash
+npx hardhat --network localhost run scripts/deploy-voting.js
+```
+
+### Coverage
+
+To check the unit test coverage, run:
+```bash
+npx hardhat coverage
+```
+
 
 
 
